@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family:'DroidNaskh'; font-style:normal; font-weight:700; src: url(../themes/font/DroidNaskh-Bold.eot);
-  src: url(../themes/font/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'), url(../themes/font/DroidNaskh-Bold.woff2) format('x-woff2'), url(/themes/font/DroidNaskh-Bold.woff) format('woff'), url(../themes/font/DroidNaskh-Bold.ttf) format('truetype');
+  src: url(../themes/font/DroidNaskh-Bold.eot?#iefix) format('embedded-opentype'), url(../themes/font/DroidNaskh-Bold.woff2) format('x-woff2'), url(../themes/font/DroidNaskh-Bold.woff) format('woff'), url(../themes/font/DroidNaskh-Bold.ttf) format('truetype');
 }
 /* Wrapper, Grids and Row Containers */
 .container_3 { margin-left: auto; margin-right: auto; width: 891px; }

@@ -41,12 +41,12 @@ $("a#JSOC_1").click();
 
     $('#newKeywords-list a.kwtitle:even').css({'background':'#c8d8f0'});
 
-    $('#sms-box').tinyscrollbar({
-   		axis: 'y',
-   		wheel: 40,
-   		scroll: true,
-   		size: 214
-   	});
+    // $('#sms-box').tinyscrollbar({
+   	// 	axis: 'y',
+   	// 	wheel: 40,
+   	// 	scroll: true,
+   	// 	size: 214
+   	// });
 /**/
     $('.header-rooznegar a').hover(function(){$(this).stop(false,true).animate({'margin-top':'0px'},300);},function(){$(this).stop(false,true).animate({'margin-top':'7px'},600);})
 
@@ -61,18 +61,18 @@ $("a#JSOC_1").click();
    		$(this).children('a').children('span').stop().animate({'height':'0px','padding-top':'0px'},400);
    	});
 	
-	var _time_random = new Date().getTime();
-	$.getJSON('/ndata/news/weekly/files/subjects.json?r='+_time_random,function(_kjson){
-		var _target = $('#radmap-list>ul.list-items');
-		_target.parent('#radmap-list').attr('id','radmap-list-js')
-		_target.html('');
-		$.each(_kjson,function(_k_i,_k_item){
-			var _li = $('<li>');
-			$('<a>').attr({'href':'/weekly/#'+_k_item.id+',1','title':_k_item.fa_title}).text(_k_item.fa_description).appendTo(_li);
-			_li.appendTo(_target);
-		});
-		$(".gd_4 div#radmap-list-js").jsonScroll({vertical: true, rtl:false, scroll: 4, nextBtn: '#navigate-down-radmap', prevBtn: '#navigate-up-radmap'});
-	});
+	// var _time_random = new Date().getTime();
+	// $.getJSON('./ndata/news/weekly/files/subjects.json?r='+_time_random,function(_kjson){
+	// 	var _target = $('#radmap-list>ul.list-items');
+	// 	_target.parent('#radmap-list').attr('id','radmap-list-js')
+	// 	_target.html('');
+	// 	$.each(_kjson,function(_k_i,_k_item){
+	// 		var _li = $('<li>');
+	// 		$('<a>').attr({'href':'/weekly/#'+_k_item.id+',1','title':_k_item.fa_title}).text(_k_item.fa_description).appendTo(_li);
+	// 		_li.appendTo(_target);
+	// 	});
+	// 	$(".gd_4 div#radmap-list-js").jsonScroll({vertical: true, rtl:false, scroll: 4, nextBtn: '#navigate-down-radmap', prevBtn: '#navigate-up-radmap'});
+	// });
 	
 	if($('#features .divTitr1_2').length===1){
 		$('#features').addClass('wide');
