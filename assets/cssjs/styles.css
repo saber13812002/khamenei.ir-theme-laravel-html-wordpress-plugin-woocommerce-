@@ -19,7 +19,7 @@ h2 a, h2 a:hover, h2 a:active, h2 a:focus,
 h3 a, h3 a:hover, h3 a:active, h3 a:focus { text-decoration: none; }
 
 		div.fixed-position {
-      background: url('../themes/fa_def/images/ver2/breaking_news_tile.gif') repeat-x ;
+      background: url('/assets/themes/fa_def/images/ver2/breaking_news_tile.gif') repeat-x ;
 			height: 40px ;
 			position: fixed ;
 			text-align: right ;
